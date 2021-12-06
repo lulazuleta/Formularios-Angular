@@ -1,0 +1,17 @@
+<h1>Clase 6 - Formulario</h1>
+
+<form [formGroup]="personaModel" (ngSubmit)="guardar()" class="m-3 col-lg-6">
+    <div class="form-group">
+     <label for="nombre">Nombre </label>
+     <input type="text" id="nombre" formControlName="nombre" class="form-control">
+    </div>
+    <div class="form-group">
+     <label for="apellido">Apellido</label>
+     <input type="text" id="apellido" formControlName="apellido"class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="mail">Mail </label>
+        <input type="email" id="mail" formControlName="mail" class="form-control">
+         </div>
+         <button class="btn btn-primary">Guardar</button>
+      </form> 
